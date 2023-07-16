@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>CampUk</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style> @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300&display=swap'); </style>
+    
+  </head>
+  
+  <nav>
+    <div class="navbar">
+      <a href="index.html">CampUk</a>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Stay</button>
+         <div class="dropdown-content">
+           <a href="#">Camping</a>
+           <a href="#">Glamping</a>
+           <a href="#">Lodges</a>
+           <a href="#">River House</a>
+         </div>
+       </div>
+
+      <div class="dropdown">
+       <button class="dropbtn">Play</button>
+        <div class="dropdown-content">
+          <a href="#">Coasteering</a>
+          <a href="#">Kayaking</a>
+          <a href="#">Paddleboarding</a>
+          <a href="#">Archery</a>
+          <a href="#">Clay Pigeon Shooting</a>
+          <a href="#">Paintballing</a>
+          <a href="#">Hiking</a>
+          <a href="#">Rock Climbing</a>
+          <a href="#">Quad Biking</a>
+        </div>
+      </div>
+      
+      <div class="dropdown">
+        <button class="dropbtn">Eat</button>
+         <div class="dropdown-content">
+           <a href="#">Cafe</a>
+           <a href="#">Restaurant and Lounge</a>
+           <a href="#">BBQ Pods</a>
+         </div>
+       </div>
+    
+       <!--- Sign In button - using js, if submit username 'admin' and password 'password' will give alert to say correct, if anything else will alert wrong-->
+      <div class="signIn">
+        <button class="dropbtn">Sign In</button>
+          <div class="dropdown-content">
+            
+            <form>
+              <label for="username">Username</label>
+              <input type="text" name="username" />
+              <label for="password">Password</label>
+              <input type="password" name="password" />
+              <button type="submit" class="btn btn-primary"style="background-color: #00ad4d; border: none;">Submit</button>
+            </form>
+            <script src="./login.js"></script>
+
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">New around here? Sign up</a>
+          <a class="dropdown-item" href="#">Forgot password?</a>
+          </div>
+        </div>
+      </div>
+  </nav>
+
+  <body style="background-color: #ffffff;">
+
+    <img src="/ad2.jpg" alt="Camp UK coasteering" width="100%">
+
+
+
+<!-- Stay with us at CampUK-->
+
+    <div class="container">
+      <h2>Stay with us at CampUK</h2>  
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+    
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="polaroid">
+              <img src="/glamping.jpg" alt="Camp UK Glamping" style="width:100%">
+              <div class="container" style="padding-left: 5%;">
+                <h3>Glamping</h3>
+                <p>
+                  <ul>
+                  <li> 4 to 8 person sharing </li>
+                  <li> BYO sleeping bags </li>
+                  <li> Shared toilets and showers </li>
+                  <li> 2 x activity passes </li>
+                  </ul>
+                </p>
+                <div class="link-in-container" style="padding-left: 70%;">
+                  <div class="action_btn">
+                  <a href="#" class="btn btn-info" role="button" style="background-color: #fa3b28; border: none;" >View more</a>
+                  <a href="#" class="btn btn-info2" role="button" style="background-color: #00ad4d; border: none;" >Book now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <div class="item">
+            <div class="polaroid">
+              <img src="/camping.png" alt="Camp UK Camping" style="width:100%">
+              <div class="container" style="padding-left: 5%;">
+              <h3>Camping</h3>
+                <p> 
+                  <ul>
+                  <li> Stay in a plot on our camping fields </li>
+                  <li> Equipment available for hire </li>
+                  <li> Shared toilets and showers </li>
+                  <li> 2 x activity passes </li>
+                  </ul>
+                </p>
+                <div class="link-in-container" style="padding-left: 70%;">
+                  <div class="action_btn">
+                  <a href="#" class="btn btn-info" role="button" style="background-color: #fa3b28; border: none;" >View more</a>
+                  <a href="#" class="btn btn-info2" role="button" style="background-color: #00ad4d; border: none;" >Book now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+          <div class="item">
+            <div class="polaroid">
+              <img src="/cottage.jpg" alt="Camp UK Lodges" style="width:100%">
+              <div class="container" style="padding-left: 5%;">
+              <h3>Lodges</h3>
+                <p>
+                  <ul>
+                  <li> Sleeps 10 - 3 double beds and 4 singles </li>
+                  <li> Private hot tub </li>
+                  <li> Fully equipped kitchen </li>
+                  <li> Perfect for families or groups </li>
+                  </ul>
+                </p>
+                <div class="link-in-container" style="padding-left: 70%;">
+                  <div class="action_btn">
+                  <a href="#" class="btn btn-info" role="button" style="background-color: #fa3b28; border: none;" >View more</a>
+                  <a href="#" class="btn btn-info2" role="button" style="background-color: #00ad4d; border: none;" >Book now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="item">
+            <div class="polaroid">
+              <img src="/house.jpg" alt="Camp UK River House" style="width:100%">
+              <div class="container" style="padding-left: 5%;">
+              <h3>River House</h3>
+                <p>
+                <ul>
+                <li> Sleeps 2/ 4/ 6 </li>
+                <li> Private hot tub </li>
+                <li> Fully equipped kitchen </li>
+                <li> Perfect for couples or families </li>
+                </ul>
+                </p>
+                <div class="link-in-container" style="padding-left: 70%;">
+                  <div class="action_btn">
+                  <a href="#" class="btn btn-info" role="button" style="background-color: #fa3b28; border: none;" >View more</a>
+                  <a href="#" class="btn btn-info2" role="button" style="background-color: #00ad4d; border: none;" >Book now</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="width: 4%;">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next" style="width: 4%; align-items: left";>
+          <span class="glyphicon glyphicon-chevron-right"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+    
+
+      
+
+<!-- Play with us at CampUK-->
+
+<div class="container">
+  <h2>Play with us at CampUK</h2>  
+  <div id="myCarousel2" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <div class="polaroid">
+          <img src="/coasteering-1-1.jpeg" alt="Camp UK Coasteering" style="width:100%">
+          <div class="container" style="padding-left: 5%;">
+            <h3>Coasteering</h3>
+            <p> Explore the coastline in a thrilling way with our coasteering adventures, combining rock climbing and swimming in the sea!
+              <ul>
+                <li> All equipment included </li>
+                <li> Qualified and experienced guides </li>
+                <li> Photographs </li>
+                <li> Fully insured </li>
+              </ul>
+            </p>
+            <div class="link-in-container" style="padding-left: 70%;">
+              <div class="action_btn">
+              <a href="#" class="btn btn-info" role="button" style="background-color: #fa3b28; border: none;" >View more</a>
+              <a href="#" class="btn btn-info2" role="button" style="background-color: #00ad4d; border: none;" >Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+<div class="item">
+        <div class="polaroid">
+          <img src="/paintballing4.jpg" alt="Camp UK Paintballing" style="width:100%">
+          <div class="container" style="padding-left: 5%;">
+          <h3>Paintballing</h3>
+            <p>With 10 distinct Paintball zones, CampUK boasts an incredibly immersive Paintball experience!
+              <ul>
+                <li> Get suited and booted in our overalls, battle packs and masks and prepare for battle </li>
+                <li> Take part in a variety of games, such as Singal Tower, Storm the Hill and The Swamp, amoung others </li>
+                <li> Can your team work together to overcome your opponents? </li>
+                <li> Many battles will be fought but who will win the war? </li>
+             </ul> 
+            </p>
+            <div class="link-in-container" style="padding-left: 70%;">
+              <div class="action_btn">
+              <a href="#" class="btn btn-info" role="button" style="background-color: #fa3b28; border: none;" >View more</a>
+              <a href="#" class="btn btn-info2" role="button" style="background-color: #00ad4d; border: none;" >Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="item">
+        <div class="polaroid">
+          <img src="/kayaking4.jpg" alt="Camp UK Kayaking" style="width:100%">
+          <div class="container" style="padding-left: 5%;">
+          <h3>Kayaking</h3>
+            <p>Relax and soak in the sights as we paddle along the coastline, thorugh channels, lagoons and caves!
+              <ul>
+                <li> All equipment included </li>
+                <li> Qualified and experienced guides </li>
+                <li> Photographs </li>
+                <li> Fully insured </li>
+             </ul> 
+            </p>
+            <div class="link-in-container" style="padding-left: 70%;">
+              <div class="action_btn">
+              <a href="#" class="btn btn-info" role="button" style="background-color: #fa3b28; border: none;" >View more</a>
+              <a href="#" class="btn btn-info2" role="button" style="background-color: #00ad4d; border: none;" >Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="item">
+        <div class="polaroid">
+          <img src="/paddleboarding.jpg" alt="Camp UK Paddleboarding" style="width:100%">
+          <div class="container" style="padding-left: 5%;">
+          <h3>Paddleboarding</h3>
+            <p>Enjoy a combination of surfing and canoeing/ kayaking which requires standing on an oversized board using a canoe-style paddle to move through the water!
+              <ul>
+                <li> Enjoy on of the fastest growing water sports </li>
+                <li> All equipment included </li>
+                <li> Qualified and experienced guides </li>
+                <li> Photographs </li>
+                <li> Fully insured </li>
+             </ul> 
+            </p>
+            <div class="link-in-container" style="padding-left: 70%;">
+              <div class="action_btn">
+              <a href="#" class="btn btn-info" role="button" style="background-color: #fa3b28; border: none;" >View more</a>
+              <a href="#" class="btn btn-info2" role="button" style="background-color: #00ad4d; border: none;" >Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel2" data-slide="prev" style="width: 4%;">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel2" data-slide="next" style="width: 4%; align-items: left";>
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+<footer>
+  <h3><a href="./contactUs.html">Contact Us</a></h3>
+  <h3><a href="#">Terms and Conditions</a>
+  <h3><a href="#">FAQs</a></h3>
+  <h3><a href="#">Gift vouchers</a></h3>
+</footer>
+  
+</body>
+
+
+</html>
+
